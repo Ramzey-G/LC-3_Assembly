@@ -41,12 +41,13 @@
 <h3>
 <a id="programming-for-lc-3" class="anchor" href="#programming-for-lc-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programming for LC-3</h3>
 
-<p>Programming for the LC-3 is tedious. For me, these programs have enhanced my ability to break down real world problems in simple mathematics.There is a limit of 19 commands (Instructions) which can be seen in the Instruction Set Architecture (ISA) in this repository</p>
+<p>Programming for the LC-3 or any type of Assembly Language can be very tedious. For me, these programs have enhanced my ability to break down real world problems in simple mathematics.</p>
 
 <h3>
 <a id="lc-3-commands" class="anchor" href="#lc-3-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>LC-3 Commands:</h3>
 
-<p>Some commands include:</p>
+<p>There is a limit of 19 commands (Instructions) which can be seen in the Instruction Set Architecture (ISA) in this repository. 
+Some commands include:</p>
 
 <ul>
 <li>ADD - adds 2 registers together</li>
@@ -77,13 +78,21 @@
 <a id="lc-3-isa" class="anchor" href="#lc-3-isa" aria-hidden="true"><span class="octicon octicon-link"></span></a>LC-3 ISA</h3>
 
 <p>In order to understand the ISA png in the repository one must understand how the oopcode (commands) work with 16 bit data. The first
-four bits contain the instruction's opcode. From here the commands vary. Here are some useful abrivations used for the LC-3 ISA:
-DR- Destination Register. This is the register in which the result of this command will be stored in. (Try to think of registers like variables)
-SR1 - Source Register 1. This is the register that is being used in the command.
-SR2 - Source Register 2. This is the second register that is being usedinthe command. 
-    EX: ADD R0, R1, R2 ;//adds contents of register 1 and register 2 and stores it into register 0
-                //R1 is SR1, R2 is SR2 and R0 is the DR
+four bits contain the instruction's opcode. From here the commands vary. Here are some useful abrivations used for the LC-3 ISA:</p>
+
+<ul>
+<li>DR- Destination Register. This is the register in which the result of this command will be stored in. (Try to think of        registers like variables)</li>
+<li>SR1 - Source Register 1. This is the register that is being used in the command.</li>
+<li>
+<p>SR2 - Source Register 2. This is the second register that is being usedinthe command. </p>
+
+<p>EX: ADD R0, R1, R2 ;//adds contents of register 1 and register 2 and stores it into register 0
+            //R1 is SR1, R2 is SR2 and R0 is the DR
 PCoffset9- This is used when telling the LC-3 to move the Program Counter (PC) to a specific line of code. This label must be no greater than 9 bits</p>
+</li>
+</ul>
+
+<p>To view the complete ISA please click <img src="https://drive.google.com/file/d/0B1A4Q1pllJ5TcXROalBVZG80YlU/view?usp=sharing" alt="here."></p>
 
 <h3>
 <a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h3>
