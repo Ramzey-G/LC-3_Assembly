@@ -28,38 +28,32 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a id="welcome-to-ramzey-ghanaims-lc-3-assembly-page" class="anchor" href="#welcome-to-ramzey-ghanaims-lc-3-assembly-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Ramzey Ghanaim's LC-3 Assembly Page.</h3>
+          <h2>
+<a id="welcome-to-ramzey-ghanaims-lc-3-assembly-page" class="anchor" href="#welcome-to-ramzey-ghanaims-lc-3-assembly-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Ramzey Ghanaim's LC-3 Assembly Page.</h2>
 
-<p>These are my programs writtenin LC-3 Assebly. The LC-3 is a computer (Little Computer 3) that is used for educational purposes to teach students how to program in Assembly. I was introduced to the LC-3 in an Engineering course at UC Santa Cruz.</p>
-
-<h3>
-<a id="running-lc-3-programs" class="anchor" href="#running-lc-3-programs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running LC-3 Programs</h3>
-
-<p>In order to run these programs the LC-3 Simulator must be used. this simulator is an emulator which emulates the hardware of an LC-3. With this simulator, users are able to run through their program step by step, run through the program as a whole, or run through the program until a break point is reached. The LC-3 simulator can be found <a href="http://highered.mheducation.com/sites/0072467509/student_view0/lc-3_simulator.html">here</a></p>
+<p>Here you can find my programs written in LC-3 Assembly. The LC-3 is a computer (Little Computer 3) that is used for educational purposes to teach students how to program in Assembly. I was introduced to the LC-3 in an Engineering course at UC Santa Cruz.</p>
 
 <h3>
 <a id="programming-for-lc-3" class="anchor" href="#programming-for-lc-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programming for LC-3</h3>
 
-<p>Programming for the LC-3 or any type of Assembly Language can be very tedious. For me, these programs have enhanced my ability to break down real world problems in simple mathematics.</p>
+<p>Programming for the LC-3 or any type of Assembly Language can be very tedious. Assembly is a low level language which gives the programmer direct access to the hardware. For the LC-3 It was crucial to know how much memory I was working with, along with the type of CPU Architecture. More information on LC-3 Specifications can be found below.For me, these programs have enhanced my ability to break down real world problems in simple mathematics. </p>
 
 <h3>
-<a id="lc-3-commands" class="anchor" href="#lc-3-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>LC-3 Commands:</h3>
+<a id="running-and-viewing-source-code-for-lc-3-programs" class="anchor" href="#running-and-viewing-source-code-for-lc-3-programs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running and viewing source code for LC-3 Programs</h3>
 
-<p>There is a limit of 19 commands (Instructions) which can be seen in the Instruction Set Architecture (ISA) in this repository. 
-Some commands include:</p>
+<p>For a basic view of my LC-3 code feel free to check out my projects on the Github project button at the upper right this page. If you would like to run and view code in the appropriate Assembler* for the LC-3  read on.</p>
 
-<ul>
-<li>ADD - adds 2 registers together</li>
-<li>ADD - can be used to add one register and one value (immediate)</li>
-<li>TRAP - used only for I/O form the user. See more later</li>
-</ul>
+<p>In order to run these programs the LC-3 Simulator must be used. this simulator is an emulator which emulates the hardware of an LC-3. With this simulator, users are able to run through their program step by step, run through the program as a whole, or run through the program until a break point is reached. The LC-3 simulator works best on Windows, however a UNIX version does exist. Both downloads can be found <a href="http://highered.mheducation.com/sites/0072467509/student_view0/lc-3_simulator.html">here.</a> </p>
+
+<p>Once the set up is complete you can find the LC3Edit application which allows you to view code along with the Stimulate application which allows you to run the program. To run a specific program go to File &gt; load program and select the appropriate source code file you would like to run. Now you will be able to view the address in memory of each line of code denoted by the hex numbers on the left. The blue arrow indicates the PC (Program Counter) which indicates the next line the of code the LC-3 is going to compute. More information on this can be found in next few paragraphs.</p>
+
+<p>*Assembly languages are written in Assemblers, not Compilers.</p>
 
 <h3>
 <a id="lc-3-architecture" class="anchor" href="#lc-3-architecture" aria-hidden="true"><span class="octicon octicon-link"></span></a>LC-3 Architecture:</h3>
 
 <ul>
-<li>RISC (Reduced Instruction Set Computer) architecture (only 19 commands)</li>
+<li>RISC (Reduced Instruction Set Computer) architecture. This means the computer does not have many commands. (19 usable)</li>
 <li>16 Bit data and address (each command uses 16 bits of storage. See how it works in the LC3 ISA png in the repository)</li>
 <li>8 General Purpose Registers (GPR)</li>
 <li>4 special-purpose registers:
@@ -75,10 +69,21 @@ Some commands include:</p>
 </ul>
 
 <h3>
+<a id="lc-3-commands" class="anchor" href="#lc-3-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>LC-3 Commands:</h3>
+
+<p>There is a limit of 19 usable commands (Instructions) which can be seen in the Instruction Set Architecture (ISA)
+Some commands include:</p>
+
+<ul>
+<li>ADD - adds 2 registers together</li>
+<li>ADD - can be used to add one register and one value (immediate)</li>
+<li>TRAP - used only for I/O.</li>
+</ul>
+
+<h3>
 <a id="lc-3-isa" class="anchor" href="#lc-3-isa" aria-hidden="true"><span class="octicon octicon-link"></span></a>LC-3 ISA</h3>
 
-<p>In order to understand the ISA png in the repository one must understand how the oopcode (commands) work with 16 bit data. The first
-four bits contain the instruction's opcode. From here the commands vary. Here are some useful abrivations used for the LC-3 ISA:</p>
+<p>In order to understand the ISA.png in the repository, one must understand how the opcode (specific instruction or command) works with 16 bit data. The first four bits of each line of memory and code contain the instruction's opcode. From here the commands vary. Here are some useful abbreviations used for the LC-3 ISA:</p>
 
 <ul>
 <li>DR- Destination Register. This is the register in which the result of this command will be stored in. (Try to think of        registers like variables)</li>
@@ -93,12 +98,7 @@ four bits contain the instruction's opcode. From here the commands vary. Here ar
 <li>PCoffset9- This is used when telling the LC-3 to move the Program Counter (PC) to a specific line of code. This label must be no greater than 9 bits</li>
 </ul>
 
-<p>To view the complete LC-3 ISA please click <a href="https://drive.google.com/file/d/0B1A4Q1pllJ5TcXROalBVZG80YlU/view?usp=sharing">here</a>.</p>
-
-<h3>
-<a id="contact-information" class="anchor" href="#contact-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Information</h3>
-
-<p>Feel free to e-mail me at <a href="mailto:rgnet1@gmail.com">rgnet1@gmail.com</a></p>
+<p>To view the complete LC-3 ISA please check out the GitHub repository or simply view on Google Drive by clicking <a href="https://drive.google.com/file/d/0B1A4Q1pllJ5TcXROalBVZG80YlU/view?usp=sharing">here</a>.</p>
         </section>
 
         <aside id="sidebar">
